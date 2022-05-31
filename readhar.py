@@ -3,7 +3,7 @@
 import json
 
 urls = []
-with open("web-dej.hec.stedingroep.nl.har", "r") as response_f:
+with open("sitename.har", "r") as response_f:
     response_dict = json.load(response_f)
     logentries = response_dict["log"]["entries"]
     for entry in logentries:
